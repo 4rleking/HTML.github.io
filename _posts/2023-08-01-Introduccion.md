@@ -5,7 +5,7 @@ excerpt: ""
 date: 2023-08-31
 classes: wide
 header:
-  teaser: /assets/images/230802/Intro.png
+  teaser: /assets/images/230802/Intro_2.png
   teaser_home_page: true
 categories:
   - 
