@@ -5,7 +5,7 @@ excerpt: "Se habla de cómo inició HTML, que significa, sus fundadores y sus pi
 date: 2023-08-31
 classes: wide
 header:
-  teaser: /assets/images/20230802/0.jpg
+  teaser: /assets/images/20230831/0.jpg
   teaser_home_page: true
 categories:
   - 
