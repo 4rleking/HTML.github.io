@@ -5,7 +5,7 @@ excerpt: ""
 date: 2023-08-28
 classes: wide
 header:
-  teaser: /assets/images/20230802/Intro.png
+  teaser: /assets/images/20230828/0.jpg
   teaser_home_page: true
 categories:
   - 
@@ -14,6 +14,8 @@ tags:
   - Título
   - Cuerpo
 ---
+
+![](/assets/images/20230828/0.jpg)
 
 El documento HTML tiene dos partes bien diferenciadas. La primera será la **cabecera del documento** en la que irá información relativa a la semántica del documento, metadatos, o a los recursos que necesita para su correcta visualización.
 
