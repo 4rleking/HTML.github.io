@@ -1,6 +1,8 @@
 main:
   - title: "Home"
     url: https://4rleking.github.io/
+  - title: "Menú"
+    url: /  
   - title: "Artículos"
     url: /year-archive/
   - title: "Categorías"
