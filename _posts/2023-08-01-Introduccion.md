@@ -2,7 +2,7 @@
 layout: single
 title: Introducción
 excerpt: ""
-date: 2023-08-01
+date: 2023-08-31
 classes: wide
 header:
   teaser: /assets/images/20230801/Introduccion.jpg
