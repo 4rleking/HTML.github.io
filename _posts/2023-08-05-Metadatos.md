@@ -5,7 +5,7 @@ excerpt: ""
 date: 2023-08-27
 classes: wide
 header:
-  teaser: /assets/images/20230801/Introduccion.jpg
+  teaser: /assets/images/20230802/Intro.png
   teaser_home_page: true
 categories:
   - Programación
