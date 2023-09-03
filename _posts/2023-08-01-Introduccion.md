@@ -13,7 +13,7 @@ tags:
   - Fundamentos
 ---
 
-![](/assets/images/20230801/Introduccion.jpg)
+![](/assets/images/20230802/Intro.png)
 
 *HTML (HyperText Markup Language)* es el lenguaje que se utiliza para crear páginas web a las que se accede mediante internet, los diseñadores utilizan el lenguaje HTML para crear páginas web y los navegadores (Google Chrome, Opera, Mozilla Firefox) muestran las páginas web después de leer e interpretar su contenido HTML.
 
