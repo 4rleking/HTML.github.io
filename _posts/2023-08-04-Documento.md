@@ -1,7 +1,7 @@
 ---
 layout: single
 title: Documento HTML
-excerpt: ""
+excerpt: "Un documento HTML se divide en 2 partes, se habla del contenido que contiene la cabecera y el contenido que lleva el cuerpo."
 date: 2023-08-28
 classes: wide
 header:
