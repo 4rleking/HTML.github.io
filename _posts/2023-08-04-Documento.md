@@ -8,12 +8,12 @@ header:
   teaser: /assets/images/20230802/Intro.png
   teaser_home_page: true
 categories:
-  - Programación
+  - 
 tags:
-  - Fundamentos
+  - Cabecera
+  - Título
+  - Cuerpo
 ---
-
-![](/assets/images/20230801/Introduccion.jpg)
 
 El documento HTML tiene dos partes bien diferenciadas. La primera será la **cabecera del documento** en la que irá información relativa a la semántica del documento, metadatos, o a los recursos que necesita para su correcta visualización.
 
