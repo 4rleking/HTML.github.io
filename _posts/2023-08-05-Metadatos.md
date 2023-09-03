@@ -13,8 +13,6 @@ tags:
   - Fundamentos
 ---
 
-![](/assets/images/20230801/Introduccion.jpg)
-
 Las *metatags de HTML* nos permiten dotar de metadatos a la página HTML. Es decir de información relativa al contenido de la página, pero que no se representa de ninguna forma. Si bien son muy importantes ya que será una parte de información que leerán los buscadores web y un correcto uso de los metadatos harán que nuestra página sea mejor o peor indexada.
 
 Por ejemplo podremos encontrar dentro de los metadatos, la *descripción de la página*, un conjunto palabras que describan la página, el *tipo de codificación de la página*, información relativa al *autor de la página* o con qué herramienta ha sido construida, entre otras más.
