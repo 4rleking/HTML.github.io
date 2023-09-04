@@ -62,7 +62,7 @@ U otros comunes:
   </tr>
   <tr>
     <td>!</td>
-    <td>&#33;</td>
+    <td>& #33;</td>
     <td>–</td>
   </tr>
   <tr>
