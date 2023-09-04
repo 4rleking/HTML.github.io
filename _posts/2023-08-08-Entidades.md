@@ -1,7 +1,7 @@
 ---
 layout: single
 title: Entidades HTML
-excerpt: ""
+excerpt: "Para insertar algunos caracteres, es importante saber que entidad debemos de insertar y como está conformada cada entidad que se pueda utilizar en este tipo de documentos."
 date: 2023-08-24
 classes: wide
 header:
