@@ -1,11 +1,11 @@
 ---
 layout: single
 title: Documento HTML
-excerpt: "Un documento HTML se divide en 2 partes, se habla del contenido que contiene la cabecera y el contenido que lleva el cuerpo."
+excerpt: "Un documento HTML se divide en 2 partes, se habla del contenido de la cabecera y el contenido del cuerpo."
 date: 2023-08-28
 classes: wide
 header:
-  teaser: /assets/images/20230828/0.jpg
+  teaser: /assets/images/
   teaser_home_page: true
 categories:
   - 
@@ -15,11 +15,11 @@ tags:
   - Cuerpo
 ---
 
-![](/assets/images/20230828/0.jpg)
+![](/assets/images/)
 
 El documento HTML tiene dos partes bien diferenciadas. La primera será la **cabecera del documento** en la que irá información relativa a la semántica del documento, metadatos, o a los recursos que necesita para su correcta visualización.
 
-Por otro lado tenemos el **cuerpo**. El cuerpo contendrá la estructura del documento HTML. Dentro del cuerpo iremos situando los diferentes elementos del lenguaje HTML para la correcta visualización de la página.
+Por otro lado, tenemos el **cuerpo**. El cuerpo contendrá la estructura del documento HTML. Dentro del cuerpo iremos situando los diferentes elementos del lenguaje HTML para la correcta visualización de la página.
 
 Pero el documento HTML se caracteriza por empezar y terminar por el elemento *html*. Es decir, al principio y al final del documento encontraremos el elemento de inicio y cierre respectivamente.
 
