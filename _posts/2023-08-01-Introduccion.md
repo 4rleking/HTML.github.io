@@ -101,19 +101,6 @@ El cuerpo (llamado body en inglés) contiene todo lo que el usuario ve en su pan
 
 A continuación, se muestra el código HTML de una página web muy sencilla:
 
-```
-<html>
-  <head>
-    <title>Mi primer documento HTML</title>
-  </head>
-
-  <body>
-    <p>El lenguaje HTML es <b>tan sencillo</b> que prácticamente se entiende sin estudiar el significado de sus etiquetas principales. </p>
-  </body>
-
-</html>
-```
-
 <center>
     <img src='./../assets/images/Introduccion/Estructura.png'>
 </center>
