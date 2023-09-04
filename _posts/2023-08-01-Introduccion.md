@@ -114,4 +114,9 @@ A continuación, se muestra el código HTML de una página web muy sencilla:
 </html>
 ```
 
+<center>
+    <img src='./../assets/images/Introduccion/Estructura.png'>
+</center>
+
+
 Te muestro la [documentación](https://developer.mozilla.org/en-US/docs/Web/HTML) del lenguaje HTML, en general, pero estaremos desglosando poco a poco y a detalle para mejor comprensión.
