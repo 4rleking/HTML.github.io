@@ -23,32 +23,32 @@ Por otro lado, tenemos el **cuerpo**. El cuerpo contendrá la estructura del doc
 
 Pero el documento HTML se caracteriza por empezar y terminar por el elemento *html*. Es decir, al principio y al final del documento encontraremos el elemento de inicio y cierre respectivamente.
 
-~~~
+```
 <html>
   <!-- Documento HTML -->
 </html>
-~~~
+```
 
 Importante es saber que antes del primer elemento html vamos a encontrar la definición del **tipo de documento HTML (doctype)** sobre el que trabajemos. Como vimos en el capítulo [tipos de documentos HTML](./2023-08-02-Tipos.md) podemos tener diferentes tipos o doctypes.
 
 De esta forma la estructura básica del documento HTML será la siguiente:
 
-~~~
+```
 <!doctype html>
 <html>
   <!-- Documento HTML -->
 </html>
-~~~
+```
 
 ## La cabecera del documento
 
 Lo primero que encontraremos dentro del documento HTML será la cabecera. La cabecera se delimita mediante el elemento head.
 
-~~~
+```
 <head>
   <!-- Elementos de cabecera -->
 </head>
-~~~
+```
 
 Dentro de la cabecera vamos a encontrar elementos que nos definen la **semántica del documento**, estos serán las *metatags* o *metadatos*. Además podremos encontrar *scripts*, *hojas de estilo* y el más importante, el *título de la página*.
 
@@ -60,9 +60,9 @@ El título del documento se definirá utilizando el elemento *title*. Cómo cont
 
 La estructura sería la siguiente:
 
-~~~
+```
 <title>Título del documento</title>
-~~~
+```
 
 El título del documento se suele cargar, por convenio como contenido de las pestañas de los navegadores web.
 
@@ -72,17 +72,17 @@ El cuerpo del documento será el que contenga los elementos de la estructura. Es
 
 El cuerpo del documento se delimita mediante el elemento *body*.
 
-~~~
+```
 <body>
   <!-- Cuerpo del documento -->
 </body>
-~~~
+```
 
 Dentro del cuerpo del documento irán todos los elementos que vamos a ir explicando dentro de este manual.
 
 Con la estructura del documento HTML que hemos visto podemos ver como estructura base de cualquier documento HTML la siguiente:
 
-~~~
+```
 <!doctype html>
 <html>
   <head>
@@ -94,4 +94,4 @@ Con la estructura del documento HTML que hemos visto podemos ver como estructura
     <!-- Cuerpo del documento HTML -->
   </body>
 </html>
-~~~
+```
