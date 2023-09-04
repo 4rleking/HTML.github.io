@@ -28,9 +28,9 @@ El origen de HTML se remonta a 1980, cuando el físico **Tim Berners-Lee**, trab
 
 Cabe mencionar que los sistemas de *"hipertexto"* ya habían sido desarrollados años atrás. En el ámbito de la informática, el "hipertexto" permitía que los usuarios accedieran a información relacionada con documentos electrónicos. De cierta manera, los primitivos sistemas de "hipertexto" podrían asimilarse a los enlaces de las páginas web actuales.
 
-  ~~~
+  ```
     ¿Y por qué hipertexto? Porque no se trata solo de un texto secuencial, sino de todos los posibles enlaces que podemos integrar en él, desde otras páginas diseñadas hasta tablas complejas, videos o juegos, entre otros.
-  ~~~
+  ```
 
 Tras finalizar el desarrollo de su sistema de "hipertexto", Tim Berners-Lee lo presentó a una convocatoria organizada para desarrollar un sistema de "hipertexto" para Internet. Después de unir sus fuerzas con el ingeniero de sistemas **Robert Cailliau**, presentaron la propuesta ganadora llamada *WorldWideWeb (W3)*.
 
@@ -72,9 +72,9 @@ En cuanto a la versión más reciente de HTML, no olvides que se trata de HTML 5
 
 Uno de los retos iniciales a los que se tuvo que enfrentar la informática fue el de cómo almacenar la información en los archivos digitales. La solución que se emplea para guardar la información con formato es sencilla: el archivo electrónico almacena tanto los contenidos como la información sobre el formato de esos contenidos. Si por ejemplo se quiere dividir el texto en párrafos y se desea dar especial importancia a algunas palabras, se podría indicar de la siguiente manera:
 
-~~~
+```
 <parrafo> Contenido de texto con <importante>algunas palabras</importante> resaltadas de forma especial. </parrafo>
-~~~
+```
 
 El principio de un párrafo se indica mediante la palabra `<parrafo>` y el final de un párrafo se indica mediante la palabra `</parrafo>`. De la misma manera, para enfatizar ciertas palabras del texto, se encierran entre `<importante>` e `</importante>`. El proceso de indicar las diferentes partes que componen la información se denomina marcar (Markup en inglés). Cada una de las palabras que se emplean para marcar el inicio y el final de una sección se denominan etiquetas.
 
@@ -85,9 +85,9 @@ Aunque existen algunas excepciones, en general las etiquetas se indican por pare
 
 Así, la estructura típica de las etiquetas HTML es:
 
-~~~
+```
 <nombre_etiqueta> ... </nombre_etiqueta>
-~~~
+```
 
 HTML es un lenguaje de etiquetas (también llamado lenguaje de marcas) y las páginas web habituales están formadas por cientos o miles de pares de etiquetas. De hecho, las letras "ML" de la sigla HTML significan Markup Language, que es como se denominan en inglés a los lenguajes de marcas. Además de HTML, existen muchos otros lenguajes de etiquetas como XML, SGML, DocBook y MathML.
 
@@ -101,7 +101,7 @@ El cuerpo (llamado body en inglés) contiene todo lo que el usuario ve en su pan
 
 A continuación, se muestra el código HTML de una página web muy sencilla:
 
-~~~
+```
 <html>
   <head>
     <title>Mi primer documento HTML</title>
@@ -112,6 +112,6 @@ A continuación, se muestra el código HTML de una página web muy sencilla:
   </body>
 
 </html>
-~~~
+```
 
 Te muestro la [documentación](https://developer.mozilla.org/en-US/docs/Web/HTML) del lenguaje HTML, en general, pero estaremos desglosando poco a poco y a detalle para mejor comprensión.
