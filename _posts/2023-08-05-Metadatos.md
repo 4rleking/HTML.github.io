@@ -1,21 +1,23 @@
 ---
 layout: single
 title: Metadatos (Las metatags de HTML)
-excerpt: ""
+excerpt: "Se habla acerca de la importancia de este tipo de datos en la estructura del archivo, depende de la información que proporciones el que pueda ser de los primeros resultados en buscar en internet, o como pueda ser que nadie la encuentre."
 date: 2023-08-27
 classes: wide
 header:
-  teaser: /assets/images/20230802/Intro.png
+  teaser: /assets/images/
   teaser_home_page: true
 categories:
-  - Programación
+  - 
 tags:
-  - Fundamentos
+  - meta
 ---
 
-Las *metatags de HTML* nos permiten dotar de metadatos a la página HTML. Es decir de información relativa al contenido de la página, pero que no se representa de ninguna forma. Si bien son muy importantes ya que será una parte de información que leerán los buscadores web y un correcto uso de los metadatos harán que nuestra página sea mejor o peor indexada.
+![](/assets/images/)
 
-Por ejemplo podremos encontrar dentro de los metadatos, la *descripción de la página*, un conjunto palabras que describan la página, el *tipo de codificación de la página*, información relativa al *autor de la página* o con qué herramienta ha sido construida, entre otras más.
+Las *metatags de HTML* nos permiten dotar de metadatos a la página HTML. Es decir, de información relativa al contenido de la página, pero que no se representa de ninguna forma. Si bien son muy importantes ya que será una parte de información que leerán los buscadores web y un correcto uso de los metadatos harán que nuestra página sea mejor o peor indexada.
+
+Por ejemplo, podremos encontrar dentro de los metadatos, la *descripción de la página*, un conjunto palabras que describan la página, el *tipo de codificación de la página*, información relativa al *autor de la página* o con qué herramienta ha sido construida, entre otras más.
 
 La estructura general de las meta-tags se define mediante el elemento meta:
 
@@ -30,7 +32,7 @@ Dentro de los metadatos podríamos diferenciarlos de tres tipos:
 
 ## Metadatos Generales
 
-Nos permiten definir información de metadatos generales del documento: *autor*, *descripción* palabras clave,… 
+Nos permiten definir información de metadatos generales del documento: *autor*, *descripción* palabras clave, … 
 
 Es estándar HTML 4.01 no define un perfil de metadatos a utilizar y deja abierto su uso. Si bien hace referencia al Dublin Core Profile para la descripción de documentos electrónicos. Algunos de los metadatos más utilizados son:
 
@@ -55,7 +57,7 @@ Define la descripción del contenido del documento a forma de resumen. Su uso se
 Conjunto de palabras que describen el documento. Las palabras van separadas por comas. Se escribiría de la siguiente forma:
 
 ~~~
-<meta name="keywords" content="manual,html,elementos,atributos,ejemplos" />
+<meta name="keywords" content="manual, html, elementos, atributos, ejemplos" />
 ~~~
 
 ### Revised
@@ -68,7 +70,7 @@ Información relativa a cuándo el documento fue revisado por última vez. Se ut
 
 ## Metadatos Cabeceras HTTP
 
-Las *cabeceras http* suelen ser establecidas en el servidor, si bien podemos modificarlas en el cliente mediante las *meta-tags*. El navegador realizará alguna acción al interpretar estas cabeceras. Por ejemplo podemos decirle al navegador cada cuanto tiempo tiene que recargar la página, o durante cuánto tiempo debe de cachear la página.
+Las *cabeceras http* suelen ser establecidas en el servidor, si bien podemos modificarlas en el cliente mediante las *meta-tags*. El navegador realizará alguna acción al interpretar estas cabeceras. Por ejemplo, podemos decirle al navegador cada cuanto tiempo tiene que recargar la página, o durante cuánto tiempo debe de cachear la página.
 
 Estos metadatos se apoyan en el atributo *http-equiv*.
 
@@ -88,7 +90,7 @@ Incluso podemos utilizar este tipo para hacer una redirección a otra página.
 
 ### Content-type
 
-Nos sirve para identificar el tipo de documento, que será un documento de tipo *text/html* y la codificación del contenido. Si es *ISO 8859-1*, *UTF-8*,… Esto servirá al navegador a interpretar los caracteres que vayan dentro del contenido.
+Nos sirve para identificar el tipo de documento, que será un documento de tipo *text/html* y la codificación del contenido. Si es *ISO 8859-1*, *UTF-8*, … Esto servirá al navegador a interpretar los caracteres que vayan dentro del contenido.
 
 #### UTF-8
 
