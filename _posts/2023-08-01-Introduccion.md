@@ -29,7 +29,7 @@ El origen de HTML se remonta a 1980, cuando el físico **Tim Berners-Lee**, trab
 Cabe mencionar que los sistemas de *"hipertexto"* ya habían sido desarrollados años atrás. En el ámbito de la informática, el "hipertexto" permitía que los usuarios accedieran a información relacionada con documentos electrónicos. De cierta manera, los primitivos sistemas de "hipertexto" podrían asimilarse a los enlaces de las páginas web actuales.
 
   ```
-    ¿Y por qué hipertexto? Porque no se trata solo de un texto secuencial, sino de todos los posibles enlaces que podemos integrar en él, desde otras páginas diseñadas hasta tablas complejas, videos o juegos, entre otros.
+    ¿Y por qué hipertexto? El término «hipertexto» hace alusión al hecho de que las páginas se pueden enlazar unas con otras. La expresión de «lenguaje de marcas» se refiere a los elementos que se utilizan para crear la estructura de contenidos de una página web.
   ```
 
 Tras finalizar el desarrollo de su sistema de "hipertexto", Tim Berners-Lee lo presentó a una convocatoria organizada para desarrollar un sistema de "hipertexto" para Internet. Después de unir sus fuerzas con el ingeniero de sistemas **Robert Cailliau**, presentaron la propuesta ganadora llamada *WorldWideWeb (W3)*.
