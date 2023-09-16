@@ -15,25 +15,27 @@ tags:
   - Cuerpo
 ---
 
-![](/assets/images/)
+<center>
+    <img src='./../assets/images/Documento/Intro.jpg'>
+</center>
 
-El documento HTML tiene dos partes bien diferenciadas. La primera será la **cabecera del documento** en la que irá información relativa a la semántica del documento, metadatos, o a los recursos que necesita para su correcta visualización.
+El documento HTML tiene dos partes bien diferenciadas. La primera será la `cabecera del documento` en la que irá información relativa a la semántica del documento, metadatos, o a los recursos que necesita para su correcta visualización.
 
-Por otro lado, tenemos el **cuerpo**. El cuerpo contendrá la estructura del documento HTML. Dentro del cuerpo iremos situando los diferentes elementos del lenguaje HTML para la correcta visualización de la página.
+Por otro lado, tenemos el `cuerpo`. El cuerpo contendrá la estructura del documento HTML. Dentro del cuerpo iremos situando los diferentes elementos del lenguaje HTML para la correcta visualización de la página.
 
-Pero el documento HTML se caracteriza por empezar y terminar por el elemento *html*. Es decir, al principio y al final del documento encontraremos el elemento de inicio y cierre respectivamente.
+Pero el documento HTML se caracteriza por empezar y terminar por el elemento `<html>`. Es decir, al principio y al final del documento encontraremos el elemento de inicio y cierre respectivamente.
 
-```
+```text
 <html>
   <!-- Documento HTML -->
 </html>
 ```
 
-Importante es saber que antes del primer elemento html vamos a encontrar la definición del **tipo de documento HTML (doctype)** sobre el que trabajemos. Como vimos en el capítulo [tipos de documentos HTML](./2023-08-02-Tipos.md) podemos tener diferentes tipos o doctypes.
+Importante es saber que antes del primer elemento html vamos a encontrar la definición del `tipo de documento HTML (doctype)` sobre el que trabajemos. Como vimos en el capítulo [tipos de documentos HTML](https://4rleking.github.io/HTML.github.io/Tipos/) podemos tener diferentes tipos o doctypes.
 
 De esta forma la estructura básica del documento HTML será la siguiente:
 
-```
+```text
 <!doctype html>
 <html>
   <!-- Documento HTML -->
