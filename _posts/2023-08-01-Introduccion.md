@@ -16,8 +16,8 @@ tags:
 
 ![Portada](/assets/images/Introduccion/Intro.jpg)
 
-<center string[allowed_elements]>
-    <img src='./../assets/images/Introduccion/Intro.jpg' string[allowed_elements]>
+<center>
+    <img src='./../assets/images/Introduccion/Intro.jpg'>
 </center>
 
 *HTML (HyperText Markup Language)* es el lenguaje que se utiliza para crear páginas web, los diseñadores utilizan el lenguaje HTML para crear páginas web y los navegadores (Google Chrome, Opera, Mozilla Firefox) muestran las páginas web después de leer e interpretar su contenido HTML.
