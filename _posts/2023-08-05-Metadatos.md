@@ -150,9 +150,19 @@ Las *cabeceras http* suelen ser establecidas en el servidor, si bien podemos mod
 
 Estos metadatos se apoyan en el atributo `http-equiv`.
 
+### Control de caché
+
+Para asegurar la fluidez del funcionamiento de Internet, las webs se suelen guardar en servidores proxy intermedios o en el caché del navegador para ser descargadas fácilmente en el futuro. Para impedirlo usamos el meta tag “cache-control” con el valor no-cache:
+
+```text
+<meta http-equiv="cache-control" content="no-cache"/>
+```
+
+Las páginas web que cuentan con este meta tag se cargan nuevamente desde el servidor web cada vez que se accede a ellas. Esto puede ralentizar la navegación, pero puede ser conveniente en el caso de páginas que actualizan su contenido diariamente.
+
 ### Refresh
 
-Especifica cada cuanto tiempo tiene que recargar la página el navegador web. El tiempo es en *segundos*. En este ejemplo, en 10 segundos se produce el reenvío a la página principal:
+Especifica cada cuanto tiempo tiene que recargar la página el navegador web. El tiempo es en *segundos*.
 
 ```text
 <meta http-equiv="refresh" content="5" />
@@ -163,6 +173,8 @@ Incluso podemos utilizar este tipo para hacer una redirección a otra página.
 ```text
 <meta http-equiv="refresh" content="2"; url=https://4rleking.github.io/" />
 ```
+
+Sin embargo, puede ocurrir que esta etiqueta no funcione en caso de ajustes especiales en el navegador, por lo que, en lugar de indicar un reenvío con meta tags, el W3C (World Wide Web Consortium), dedicado a la estandarización de técnicas y usos en Internet, recomienda usar el `código de estado de HTTP 301`, por medio del cual un servidor informa de si el archivo buscado ha cambiado de ubicación.
 
 ### Content-type
 
