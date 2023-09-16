@@ -52,7 +52,7 @@ Lo primero que encontraremos dentro del documento HTML será la cabecera. La cab
 </head>
 ```
 
-Dentro de la cabecera vamos a encontrar elementos que nos definen la `semántica del documento`, estos serán las `metatags* o metadatos`. Además podremos encontrar `scripts`, `hojas de estilo` y el más importante, el `título de la página`.
+Dentro de la cabecera vamos a encontrar elementos que nos definen la `semántica del documento`, estos serán las `metatags o metadatos`. Además podremos encontrar `scripts`, `hojas de estilo` y el más importante, el `título de la página`.
 
 Es importante remarcar que el contenido que se encuentre dentro de la cabecera no tiene una representación visual directa.
 
