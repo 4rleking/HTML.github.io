@@ -13,7 +13,9 @@ tags:
   - meta
 ---
 
-![](/assets/images/)
+<center>
+    <img src='./../assets/images/Metatags/Intro.svg'>
+</center>
 
 Las *metatags de HTML* nos permiten dotar de metadatos a la página HTML. Es decir, de información relativa al contenido de la página, pero que no se representa de ninguna forma. Si bien son muy importantes ya que será una parte de información que leerán los buscadores web y un correcto uso de los metadatos harán que nuestra página sea mejor o peor indexada.
 
