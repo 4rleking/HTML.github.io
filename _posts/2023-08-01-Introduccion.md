@@ -14,8 +14,6 @@ tags:
   - Características
 ---
 
-![Portada](/assets/images/Introduccion/Intro.jpg)
-
 <center>
     <img src='./../assets/images/Introduccion/Intro.jpg'>
 </center>
