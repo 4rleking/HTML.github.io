@@ -14,7 +14,7 @@ tags:
   - Características
 ---
 
-![](/assets/images/Introduccion/0.jpg)
+![Portada](/assets/images/Introduccion/0.jpg)
 
 *HTML (HyperText Markup Language)* es el lenguaje que se utiliza para crear páginas web, los diseñadores utilizan el lenguaje HTML para crear páginas web y los navegadores (Google Chrome, Opera, Mozilla Firefox) muestran las páginas web después de leer e interpretar su contenido HTML.
 
@@ -28,7 +28,7 @@ El origen de HTML se remonta a 1980, cuando el físico **Tim Berners-Lee**, trab
 
 Cabe mencionar que los sistemas de *"hipertexto"* ya habían sido desarrollados años atrás. En el ámbito de la informática, el "hipertexto" permitía que los usuarios accedieran a información relacionada con documentos electrónicos.
 
-  ```
+  ```text
     ¿Y por qué hipertexto? El término «hipertexto» hace alusión al hecho de que las páginas 
     se pueden enlazar unas con otras. La expresión de «lenguaje de marcas» se refiere a los 
     elementos que se utilizan para crear la estructura de contenidos de una página web.
@@ -74,7 +74,7 @@ En cuanto a la versión más reciente de HTML, no olvides que se trata de HTML 5
 
 Uno de los retos iniciales a los que se tuvo que enfrentar la informática fue el de cómo almacenar la información en los archivos digitales. La solución que se emplea para guardar la información con formato es sencilla: el archivo electrónico almacena tanto los contenidos como la información sobre el formato de esos contenidos. Si por ejemplo se quiere dividir el texto en párrafos y se desea dar especial importancia a algunas palabras, se podría indicar de la siguiente manera:
 
-```
+```text
 <parrafo> Contenido de texto con <importante>algunas palabras</importante>
 resaltadas de forma especial. </parrafo>
 ```
@@ -83,12 +83,12 @@ El principio de un párrafo se indica mediante la palabra `<parrafo>` y el final
 
 Aunque existen algunas excepciones, en general las etiquetas se indican por pares y se forman de la siguiente manera:
 
-* **Etiqueta de apertura**: carácter `<`, seguido del nombre de la etiqueta (sin espacios en blanco) y terminado con el carácter `>` 
+* **Etiqueta de apertura**: carácter `<`, seguido del nombre de la etiqueta (sin espacios en blanco) y terminado con el carácter `>`.
 * **Etiqueta de cierre**: carácter `<`, seguido del carácter `/`, seguido del nombre de la etiqueta (sin espacios en blanco) y terminado con el carácter `>`.
 
 Así, la estructura típica de las etiquetas HTML es:
 
-```
+```text
 <nombre_etiqueta> ... </nombre_etiqueta>
 ```
 
@@ -104,9 +104,8 @@ El cuerpo (llamado body en inglés) contiene todo lo que el usuario ve en su pan
 
 A continuación, se muestra el código HTML de una página web muy sencilla:
 
-<center>
-    <img src='./../assets/images/Introduccion/Estructura.png'>
+<center string[allowed_elements]>
+    <img src='./../assets/images/Introduccion/Estructura.png' string[allowed_elements]>
 </center>
-
 
 Te muestro la [documentación](https://developer.mozilla.org/en-US/docs/Web/HTML) del lenguaje HTML, en general, pero estaremos desglosando poco a poco y a detalle para mejor comprensión.
