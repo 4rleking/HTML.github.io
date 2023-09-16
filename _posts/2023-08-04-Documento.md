@@ -16,7 +16,7 @@ tags:
 ---
 
 <center>
-    <img src='./../assets/images/Documento/Intro.jpg'>
+    <img src='./../assets/images/Documento/Intro.svg'>
 </center>
 
 El documento HTML tiene dos partes bien diferenciadas. La primera será la `cabecera del documento` en la que irá información relativa a la semántica del documento, metadatos, o a los recursos que necesita para su correcta visualización.
