@@ -160,6 +160,32 @@ Para asegurar la fluidez del funcionamiento de Internet, las webs se suelen guar
 
 Las páginas web que cuentan con este meta tag se cargan nuevamente desde el servidor web cada vez que se accede a ellas. Esto puede ralentizar la navegación, pero puede ser conveniente en el caso de páginas que actualizan su contenido diariamente.
 
+### Expires
+
+Es posible que no se quiera prohibir el almacenamiento temporal en caché de forma absoluta. En este caso se puede usar el atributo `http-equiv` para definir una fecha de expiración para los datos HTML solicitados. Se haría de esta manera:
+
+```text
+<meta http-equiv="expires" content="tiempo de expiración en segundos"/>
+```
+
+Así es posible asignar a las páginas HTML la fecha de caducidad que se deseen. Una vez se supera esta fecha, el navegador tiene que cargar el documento HTML desde la página de origen. Pero si tiene que acudir siempre a la página original entonces se introduce un punto de caducidad de 0 segundos. 
+
+```text
+<meta http-equiv="expires" content="0"/>
+```
+
+En caso de que se quiera indicar un período de 12 horas, se introducen 43.200 segundos.
+
+```text
+<meta http-equiv="expires" content="43200"/>
+```
+
+También es posible definir períodos de tiempo o fechas concretas, siempre en formato internacional y según el GMT (Greenwich Mean Time):
+
+```text
+<meta http-equiv="expires" content="Sat, 07 Feb 2016 00:00:00 GMT"/>
+```
+
 ### Refresh
 
 Especifica cada cuanto tiempo tiene que recargar la página el navegador web. El tiempo es en *segundos*.
