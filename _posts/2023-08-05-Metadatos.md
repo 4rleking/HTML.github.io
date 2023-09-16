@@ -148,20 +148,20 @@ Eso sí, algunas son muy importantes para mejorar el posicionamiento de nuestra 
 
 Las *cabeceras http* suelen ser establecidas en el servidor, si bien podemos modificarlas en el cliente mediante las *meta-tags*. El navegador realizará alguna acción al interpretar estas cabeceras. Por ejemplo, podemos decirle al navegador cada cuanto tiempo tiene que recargar la página, o durante cuánto tiempo debe de cachear la página.
 
-Estos metadatos se apoyan en el atributo *http-equiv*.
+Estos metadatos se apoyan en el atributo `http-equiv`.
 
 ### Refresh
 
-Especifica cada cuanto tiempo tiene que recargar la página el navegador web. El tiempo es en *segundos*.
+Especifica cada cuanto tiempo tiene que recargar la página el navegador web. El tiempo es en *segundos*. En este ejemplo, en 10 segundos se produce el reenvío a la página principal:
 
-```
+```text
 <meta http-equiv="refresh" content="5" />
 ```
 
 Incluso podemos utilizar este tipo para hacer una redirección a otra página.
 
-```
-<meta http-equiv="refresh" content="2; http://lineadecodigo.com" />
+```text
+<meta http-equiv="refresh" content="2"; url=https://4rleking.github.io/" />
 ```
 
 ### Content-type
