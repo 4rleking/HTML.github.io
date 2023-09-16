@@ -16,6 +16,10 @@ tags:
 
 ![Portada](/assets/images/Introduccion/Intro.jpg)
 
+<center string[allowed_elements]>
+    <img src='./../assets/images/Introduccion/Intro.jpg' string[allowed_elements]>
+</center>
+
 *HTML (HyperText Markup Language)* es el lenguaje que se utiliza para crear páginas web, los diseñadores utilizan el lenguaje HTML para crear páginas web y los navegadores (Google Chrome, Opera, Mozilla Firefox) muestran las páginas web después de leer e interpretar su contenido HTML.
 
 El lenguaje HTML es un estándar reconocido en todo el mundo y cuyas normas define un organismo sin fin de lucro llamado [World Wide Web Consortium](https://www.w3.org/), más conocido como **W3C**. W3C define al HTML como *"un lenguaje reconocido universalmente y que permite publicar información de forma global"*.
