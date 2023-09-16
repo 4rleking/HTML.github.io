@@ -21,9 +21,9 @@ Las *metatags de HTML* nos permiten dotar de metadatos a la página HTML. Es dec
 
 Por ejemplo, podremos encontrar dentro de los metadatos, la *descripción de la página*, un conjunto palabras que describan la página, el *tipo de codificación de la página*, información relativa al *autor de la página* o con qué herramienta ha sido construida, entre otras más.
 
-La estructura general de las meta-tags se define mediante el elemento meta:
+La estructura general de las meta-tags se define mediante el elemento `meta`:
 
-```
+```text
 <meta name="metadato" content="valor" http-equiv="cabecera-http" schema="esquema"/>
 ```
 
@@ -34,7 +34,7 @@ Dentro de los metadatos podríamos diferenciarlos de tres tipos:
 
 ## Metadatos Generales
 
-Nos permiten definir información de metadatos generales del documento: *autor*, *descripción* palabras clave, … 
+Nos permiten definir información de metadatos generales del documento: *autor*, *descripción* palabras clave, …
 
 Es estándar HTML 4.01 no define un perfil de metadatos a utilizar y deja abierto su uso. Si bien hace referencia al Dublin Core Profile para la descripción de documentos electrónicos. Algunos de los metadatos más utilizados son:
 
@@ -42,23 +42,27 @@ Es estándar HTML 4.01 no define un perfil de metadatos a utilizar y deja abiert
 
 Para hacer referencia al autor del documento. La estructura sería:
 
-```
+```text
 <meta name="author" content="Manual Web" />
 ```
 
 ### Description
 
-Define la descripción del contenido del documento a forma de resumen. Su uso sería:
+Define la descripción del contenido del documento a forma de resumen. Es el elemento más importante de cara al posicionamiento, ya que Google y otros buscadores lo suelen utilizar para ser mostrado en los resultados de búsqueda. Su uso sería:
 
-```
+```text
 <meta name="description" content="Manual Web que nos explica el uso del lenguaje HTML" />
 ```
 
 ### Keywords
 
-Conjunto de palabras que describen el documento. Las palabras van separadas por comas. Se escribiría de la siguiente forma:
+Conjunto de palabras que describen el documento. Las palabras van separadas por comas.
 
-```
+Un ejemplo podría ser “coches, coches deportivos, coches de lujo”. Aunque en su momento esta etiqueta tuvo importancia, actualmente buscadores como Google ignoran esta información, ya que solía ser utilizada para incluir datos no relacionados con la página.
+
+Se escribiría de la siguiente forma:
+
+```text
 <meta name="keywords" content="manual, html, elementos, atributos, ejemplos" />
 ```
 
@@ -66,9 +70,79 @@ Conjunto de palabras que describen el documento. Las palabras van separadas por 
 
 Información relativa a cuándo el documento fue revisado por última vez. Se utilizará de la siguiente forma:
 
-```
+```text
 <meta name="revised" content="24/03/2016" />
 ```
+
+### Copyright
+
+Información sobre el copyright de la página.
+
+```text
+<meta name="copyright" content="Propietario del copyright" />
+```
+
+### Generator
+
+Indica con qué herramienta se ha desarrollado la página, si es que se ha utilizado alguna en específico.
+
+Por ejemplo, un valor para este elemento podría ser “WordPress”.
+
+### Robots
+
+Con esta etiqueta podremos definir las acciones que pueden tomar los robots de los motores de búsqueda en nuestra página web.
+
+Podemos usar valores como `Disallow` y `Allow` en el `Robots.txt` de WordPress para que los robots accedan o no al contenido de las URLs que van encontrando.
+
+* Index
+
+Esta directriz permite al robot de búsqueda la indexación de una página de HTML, algo innecesario si se piensa que la indexación forma parte de su actividad habitual, así:
+
+```text
+<meta name="robots" content="index"/>
+```
+
+* Noindex
+
+Se tiene que indicar expresamente si una página no debe ser incluida en el índice. Este tag prohíbe al buscador transferir contenidos de una página HTML a su base de datos:
+
+```text
+ <meta name="robots" content="noindex"/>
+ ```
+
+El atributo `“robots”` se dirige a todos los buscadores, y `“noindex”` indica que no se permite la indexación. Si queremos impedirle el proceso solo a un buscador, podemos indicarlo con un atributo alternativo como, por ejemplo, `“googlebot”`.
+
+* Follow
+
+El comportamiento estándar de los motores de búsqueda consiste en recorrer los enlaces que encuentra en una página de HTML, a no ser que se les indique lo contrario. Esta información se puede incluir en las metaetiquetas, aunque no es necesario:
+
+```text
+<meta name="robots" content="follow"/>
+ ```
+
+* Nofollow
+
+Si se quiere impedir que un robot de búsqueda alcance determinadas subpáginas de un sitio o rastree los enlaces en otro dominio se añade:
+
+```text
+<meta name="robots" content="nofollow"/>
+```
+
+El robot ignora, así, los enlaces por completo, pero no el contenido de la página, que sí será transferido a la base de datos del buscador.
+
+Los meta tags `Index`/`Noindex` y `Follow`/`Nofollow` se pueden usar solos o combinados. Se puede, por ejemplo, determinar que una página sea indexada pero que los links sean ignorados, así como permitir o impedir ambas acciones a los robots.
+
+```text
+<meta name="robots" content="index,nofollow" />
+<meta name="robots" content="index,follow" />
+<meta name="robots" content="noindex,nofollow" />
+```
+
+Todas las etiquetas meta son opcionales, de forma que la página seguirá funcionando correctamente aunque no tengamos ninguna.
+
+De hecho, lo normal es que no tengamos todas ellas.
+
+Eso sí, algunas son muy importantes para mejorar el posicionamiento de nuestra web, en especial la etiqueta *description*.
 
 ## Metadatos Cabeceras HTTP
 
