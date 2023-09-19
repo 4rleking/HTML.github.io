@@ -3,6 +3,8 @@ main:
     url: https://4rleking.github.io/
   - title: "Menú"
     url: /
+  - title: "Categorías"
+    url: /categories/
   - title: "Etiquetas"
     url: /tags/
   - title: "Vídeos"
