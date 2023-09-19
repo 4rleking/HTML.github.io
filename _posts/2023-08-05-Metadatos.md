@@ -168,7 +168,7 @@ Es posible que no se quiera prohibir el almacenamiento temporal en caché de for
 <meta http-equiv="expires" content="tiempo de expiración en segundos"/>
 ```
 
-Así es posible asignar a las páginas HTML la fecha de caducidad que se deseen. Una vez se supera esta fecha, el navegador tiene que cargar el documento HTML desde la página de origen. Pero si tiene que acudir siempre a la página original entonces se introduce un punto de caducidad de 0 segundos. 
+Así es posible asignar a las páginas HTML la fecha de caducidad que se deseen. Una vez se supera esta fecha, el navegador tiene que cargar el documento HTML desde la página de origen. Pero si tiene que acudir siempre a la página original entonces se introduce un punto de caducidad de 0 segundos.
 
 ```text
 <meta http-equiv="expires" content="0"/>
@@ -204,25 +204,25 @@ Sin embargo, puede ocurrir que esta etiqueta no funcione en caso de ajustes espe
 
 ### Content-type
 
-Nos sirve para identificar el tipo de documento, que será un documento de tipo *text/html* y la codificación del contenido. Si es *ISO 8859-1*, *UTF-8*, … Esto servirá al navegador a interpretar los caracteres que vayan dentro del contenido.
+Nos sirve para identificar el `tipo de documento`, que será un documento de tipo `text/html` y la codificación del contenido. Si es `ISO 8859-1`, `UTF-8`, Esto servirá al navegador a interpretar los caracteres que vayan dentro del contenido.
 
 #### UTF-8
 
-```
+```text
 <meta http-equiv=”Content-Type” content=”text/html; charset=UTF-8″ />
 ```
 
 #### ISO-8859-1
 
-```
+```text
 <meta http-equiv=”Content-Type” content=”text/html; charset=ISO-8859-1″ />
 ```
 
 ### Cookie
 
-Nos sirve para guardar una cookie. Los datos guardados son clave/valor
+Nos sirve para guardar una cookie. Los datos guardados son `clave/valor`
 
-```
+```text
 <meta http-equiv="cookie" content="clave=valor; expires=Saturday, 25-Mar-16 23:59:59 GMT;" />
 ```
 
@@ -234,7 +234,7 @@ Como hemos comentado anteriormente la especificación *HTML 4.01* no habla de un
 
 Define el título del documento.
 
-```
+```text
 <meta name="og:title" content="Manual Web. Manuales en Español" />
 ```
 
@@ -242,7 +242,7 @@ Define el título del documento.
 
 Indica el tipo de objeto que representa la página. Si es un artículo, un vídeo, una imagen,…
 
-```
+```text
 <meta name="og:type" content="article" />
 ```
 
@@ -250,7 +250,7 @@ Indica el tipo de objeto que representa la página. Si es un artículo, un víde
 
 Permite establecer la imagen más representativa del documento
 
-```
+```text
 <meta name="og:image" content="http://www.manualweb.net/logo.png" />
 ```
 
@@ -258,6 +258,8 @@ Permite establecer la imagen más representativa del documento
 
 Nos ayuda a definir la URL asociada al documento. Esto es por si queremos utilizar alguna diferente a la URL que ya tenga.
 
-```
+```text
 <meta name="og:url" content="http://www.manualweb.net" />
 ```
+
+Algunos desarrolladores utilizan herramientas o servicios online para generar sus *metatags* ejemplo, [metatags.org](https://www.metatags.org/seo-tips/why-use-meta-tags/metatags-generator/).
