@@ -1,7 +1,7 @@
 ---
 layout: single
 title: Entidades HTML
-excerpt: "Para insertar algunos caracteres, es importante saber que entidad debemos de insertar y como está conformada cada entidad que se pueda utilizar en este tipo de documentos."
+excerpt: "En ocasiones insertar un caracter especial es imposible, pero aquí te muestra una lista de los principales caracteres y su entidad de como ingresarla en el texto HTML."
 date: 2023-08-24
 classes: wide
 header:
