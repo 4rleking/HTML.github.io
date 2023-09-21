@@ -13,7 +13,9 @@ tags:
   - Entidades (Código)
 ---
 
-![](/assets/images/)
+<center>
+    <img src='./../assets/images/Entidades/Intro.jpg'>
+</center>
 
 Cuando estemos insertando texto en nuestros documentos HTML puede darse el caso de que necesitemos insertar *símbolos*. Bien ya sean símbolos de la codificación que estemos utilizando o símbolos de carácter general. Esto pueden ser monedas, símbolos de puntuación, etc.
 
