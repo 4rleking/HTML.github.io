@@ -37,12 +37,6 @@ Algunos de las entidades más utilizadas son los acentos:
 í	&iacute;
 ```
 
-Resultado:
-
-á	&aacute;
-é	&eacute;
-í	&iacute;
-
 Los símbolos que utiliza el propio lenguaje HTML:
 
 ```text
@@ -50,12 +44,6 @@ Los símbolos que utiliza el propio lenguaje HTML:
 <	&lt;
 >	&gt;
 ```
-
-Resultado:
-
-&	&amp;
-<	&lt;
->	&gt;
 
 U otros comunes:
 
@@ -66,16 +54,9 @@ U otros comunes:
 ®	&reg;
 ```
 
-Resultado:
-
-€	&euro;
-£	&pound;
-©	&copy;
-®	&reg;
-
 ## Principales entidades HTML
 
-Para revisar las entidades de HTML puedes visitar la [lista oficial de entidades HTML](https://html.spec.whatwg.org/multipage/named-characters.html#named-character-references), la cuál es actualizada constantemente.
+Existen demasiadas entidades, y para revisar todas las entidades que existen de HTML puedes visitar la [lista oficial de entidades HTML](https://html.spec.whatwg.org/multipage/named-characters.html#named-character-references), la cuál es actualizada constantemente.
 
 Existen varios sitios el cual ofrecen estos códigos, por ejemplo:
 
