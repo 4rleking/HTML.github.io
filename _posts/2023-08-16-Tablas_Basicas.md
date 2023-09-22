@@ -27,7 +27,7 @@ Añadimos el elemento caption antes de cualquier definición de filas dentro de 
 
 Así, el código para poner el título a la tabla sería:
 
-```
+```text
 <table>
 <caption>Mi tabla de ejemplo</caption>
   <tr>
@@ -38,6 +38,16 @@ Así, el código para poner el título a la tabla sería:
   </tr>
 </table>
 ```
+
+<table>
+<caption>Mi tabla de ejemplo</caption>
+  <tr>
+    <td>Fila 1 Columna 1</td>
+    <td>Fila 1 Columna 2</td>
+    <td>Fila 1 Columna 3</td>
+    <td>Fila 1 Columna 4</td>
+  </tr>
+</table>
 
 ## Resumen de la tabla
 
