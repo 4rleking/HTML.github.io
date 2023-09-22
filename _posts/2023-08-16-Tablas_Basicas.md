@@ -230,33 +230,6 @@ Así indicaremos que el colspan de esa celda es 2. Ya que ocupa dos celdas.
 <td colspan="2">Enero</td>
 ```
 
-El código completo sería:
-
-<table>
-  <tr>
-    <td colspan="2">Enero</td>
-    <td colspan="2">Febrero</td>
-  </tr>
-  <tr>
-    <td>Ingresos</td>
-    <td>Gastos</td>
-    <td>Ingresos</td>
-    <td>Gastos</td>
-  </tr>
-  <tr>
-    <td>1.000€</td>
-    <td>700€/td>
-    <td>1.100€</td>
-    <td>580€</td>
-  </tr>
-  <tr>
-    <td>1.800€</td>
-    <td>920€</td>
-    <td>1.750€</td>
-    <td>920€</td>
-  </tr>
-</table>
-
 De igual manera nos puede suceder en sentido horizontal. Es decir, que queramos que una celda ocupe dos filas.
 
 Si lo vemos sobre nuestro ejemplo veremos que podemos añadir una columna que simplemente ponga que los valores numéricos tengan el literal *“Datos Económicos”*. En este caso tendremos que indicar que esa celda ocupa dos filas.
