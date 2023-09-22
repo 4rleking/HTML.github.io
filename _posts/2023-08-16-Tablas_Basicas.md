@@ -183,7 +183,7 @@ Para resolver este problema tenemos el atributo `scope`. El atributo scope solo 
 
 De esta forma si queremos que esta celda sea representativa de columnas la definiremos como:
 
-```
+```text
 <td scope="col">Contenido de la Celda</td>
 ```
 
@@ -195,6 +195,7 @@ Imaginemos una tabla que nos saca los ingresos y gastos por meses. Existirá una
 
 Algo como lo siguiente:
 
+```text
 <table>
   <tr>
     <td colspan="2">Enero</td>
@@ -219,18 +220,18 @@ Algo como lo siguiente:
     <td>920€</td>
   </tr>
 </table>
+```
 
 En este caso lo que estamos diciendo es que una celda ocupa dos espacios. Para ello vamos a utilizar el atributo `colspan` sobre el elemento `td` de la celda.
 
 Así indicaremos que el colspan de esa celda es 2. Ya que ocupa dos celdas.
 
-```
+```text
 <td colspan="2">Enero</td>
 ```
 
 El código completo sería:
 
-```
 <table>
   <tr>
     <td colspan="2">Enero</td>
@@ -255,7 +256,6 @@ El código completo sería:
     <td>920€</td>
   </tr>
 </table>
-```
 
 De igual manera nos puede suceder en sentido horizontal. Es decir, que queramos que una celda ocupe dos filas.
 
