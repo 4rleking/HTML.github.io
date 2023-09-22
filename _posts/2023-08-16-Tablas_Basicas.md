@@ -39,6 +39,8 @@ Así, el código para poner el título a la tabla sería:
 </table>
 ```
 
+Resultado:
+
 <table>
 <caption>Mi tabla de ejemplo</caption>
   <tr>
