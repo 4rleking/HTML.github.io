@@ -1,7 +1,7 @@
 ---
 layout: single
 title: Agrupaciones HTML
-excerpt: ""
+excerpt: "En ocasiones necesitaremos agregar un estilo sólo a una parte del contenido de nuestro sitio web, o por necesidades de organización, tendremos que organizar nuestro artículo por bloques, en fin, tantas utilidades que se le puede agregar a este tipo de agrupaciones que se explicarán poco a poco."
 date: 2023-08-18
 classes: wide
 header:
