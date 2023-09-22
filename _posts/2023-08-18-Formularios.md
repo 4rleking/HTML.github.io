@@ -1,7 +1,7 @@
 ---
 layout: single
 title: Formularios HTML
-excerpt: ""
+excerpt: "Hasta el momento ya tenemos la mayoría de pasos para realizar una página web, pero al momento de poder interactuar con los lectores, o seguidores, tenemos que pedir información acerca de ellos, para eso podemos insertar algunos campos de formularios. el cual permita que el lector pueda otorgarnos parte de su información para aclarar duda y/o implementar encuentas, entre varias funciones más."
 date: 2023-08-14
 classes: wide
 header:
