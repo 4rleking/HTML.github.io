@@ -263,41 +263,15 @@ Si lo vemos sobre nuestro ejemplo veremos que podemos añadir una columna que si
 </table>
 ```
 
-<table>
-  <tr>
-    <td></td>
-    <td colspan="2">Enero</td>
-    <td colspan="2">Febrero</td>
-  </tr>
-  <tr>
-    <td rowspan="3">Datos Económicos</td>
-    <td>Ingresos</td>
-    <td>Gastos</td>
-    <td>Ingresos</td>
-    <td>Gastos</td>
-  </tr>
-  <tr>
-    <td>1.000€</td>
-    <td>700€/td>
-    <td>1.100€</td>
-    <td>580€</td>
-  </tr>
-  <tr>
-    <td>1.800€</td>
-    <td>920€</td>
-    <td>1.750€</td>
-    <td>920€</td>
-  </tr>
-</table>
-
 Para la agrupación de filas tenemos otro atributo que es `rowspan`. Este atributo, al igual que `colspan` se aplica sobre la celda td
 
-```
+```text
 <td rowspan="3">Datos Económicos</td>
 ```
 
 El código completo de la tabla sería el siguiente:
 
+```text
 <table>
   <tr>
     <td></td>
@@ -324,3 +298,4 @@ El código completo de la tabla sería el siguiente:
     <td>920€</td>
   </tr>
 </table>
+```
