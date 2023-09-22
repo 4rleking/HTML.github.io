@@ -1,7 +1,7 @@
 ---
 layout: single
 title: Tablas Avanzadas HTML
-excerpt: ""
+excerpt: "Vamos avanzando poco a poco en las tablas, con esto podremos ingresar tablas avanzadas y cada una de las partes de la misma."
 date: 2023-08-15
 classes: wide
 header:
@@ -13,7 +13,9 @@ tags:
   - Tablas Avanzadas
 ---
 
-![](/assets/images/)
+<center>
+    <img src='./../assets/images/Tablas/TablasAvanzadas.png'>
+</center>
 
 ## Grupos de Filas
 
