@@ -23,8 +23,10 @@ Los formularios HTML son elementos de las páginas web que nos sirven para recup
 
 La sintaxis para definir un formulario será mediante el elemento `form`:
 
-```
-<form>...</form>
+```text
+<form>
+  ...
+</form>
 ```
 
 ## Campos de Formularios
@@ -51,7 +53,7 @@ Son los elementos básicos de un formulario ya que son los que nos permiten recu
 
 El elemento que representa los campos de entrada de datos es `input`. La estructura básica de un campo de entrada es la siguiente:
 
-```
+```text
 <input type="tipo" id="identificador" size="tamaño"
   name="nombre" value="texto por defecto"/>
 ```
@@ -82,14 +84,14 @@ El campo de texto, como bien indica su nombre, es el que nos permite insertar te
 
 En este caso el tipo de elemento input que utilizaremos será `“text”`. Así, para definir un campo de texto lo haremos de la siguiente forma:
 
-```
+```text
 <input type="text" id="identificador" size="tamaño"
   name="nombre" value="texto por defecto"/>
 ```
 
 De esta forma si queremos crear un campo de texto para poder insertar 70 caracteres que contenga un email, lo definiremos de la siguiente forma:
 
-```
+```text
 <input type="text" id="email" name="email"
   size="70" value="usuario@dominio.com"/>
 ```
@@ -100,13 +102,13 @@ Cuando un usuario inserte una contraseña dentro de un formulario necesitaremos,
 
 Para insertar un campo que acepte contraseñas dentro de un formulario vamos a utilizar un tipo `“password”` dentro del elemento input.
 
-```
+```text
 <input type="password" id="identificador" size="tamaño" name="nombre"/>
 ```
 
 En este caso, aunque podemos poner un valor por defecto, si bien, no parece tener mucho sentido. Si queremos definir un campo que acepte contraseñas de 20 caracteres lo codificaremos de la siguiente forma:
 
-```
+```text
 <input type="password" id="clave" name="clave" size="20"/>
 ```
 
@@ -114,19 +116,19 @@ En este caso, aunque podemos poner un valor por defecto, si bien, no parece tene
 
 Un checkbox nos permite capturar un dato del usuario mediante un elemento de check. El check puede tener dos valores, seleccionado o no seleccionado. El tipo del elemento input que utilizaremos será `“checkbox”`. Así lo definiremos de la siguiente forma:
 
-```
+```text
 <input type="checkbox" id="identificador" name="nombre"/>
 ```
 
 En el caso del checkbox no tienen sentido el atributo tamaño ni el valor por defecto. Ya que, recordemos que solo podemos tener el check seleccionado o no. Pero lo que sí podemos hacer es generar un checkbox que esta preseleccionado. Para ello utilizamos el atributo checked.
 
-```
+```text
 <input type="checkbox" id="identificador" name="nombre" checked="checked"/>
 ```
 
 Pero ¿dónde está el texto que acompaña al checkbox? Realmente el checkbox no tiene definido que acompañe al checkbox. Si no que hay que añadir el texto directamente al lado del checkbox.
 
-```
+```text
 <input type="checkbox" id="identificador" name="nombre" checked="checked"/>
 Texto del checkbox
 ```
@@ -135,18 +137,21 @@ Aunque más adelante vamos a ver una forma más correcta de asociar el texto al 
 
 Así, si queremos crear un checkbox que nos pregunte si estamos de acuerdo con unas condiciones podríamos codificarlo de la siguiente forma:
 
-```
-<input type="checkbox" id="condiciones" name="condiciones"/>Está de acuerdo con las condiciones explicadas más arriba.
+```text
+<input type="checkbox" id="condiciones" name="condiciones"/>Está de acuerdo con las 
+condiciones explicadas más arriba.
 ```
 
 Los checkbox suelen ir en grupos para seleccionar varias opciones. Por ejemplo podríamos tener el siguiente código con el que podamos seleccionar qué lenguaje de programación queremos aprender.
 
-```
+```text
 <input type="checkbox" name="lenguaje" value="html">HTML
 <input type="checkbox" name="lenguaje" value="javascript">Javascript
 <input type="checkbox" name="lenguaje" value="css">CSS
 <input type="checkbox" name="lenguaje" value="xml">XML
 ```
+
+Resultado:
 
 <input type="checkbox" name="lenguaje" value="html">HTML
 <input type="checkbox" name="lenguaje" value="javascript">Javascript
@@ -159,7 +164,7 @@ Con los elementos de radio podemos ofrecer un conjunto de opciones al usuario de
 
 La sintaxis que seguiremos en los elementos input de tipo radio será la siguiente:
 
-```
+```text
 <input type="radio" id="identificador" value="valor" name="nombre"/>
 ```
 
@@ -167,12 +172,14 @@ En el caso de los elementos radio toma un papel principal el atributo `name`. Ya
 
 Así, si queremos crear un grupo de radios para que nos elija una edad le podremos crear de la siguiente forma:
 
-```
+```text
 <input type="radio" id="menos18" value="menos18" name="edad"/>Menos de 18
 <input type="radio" id="18a30" value="18a30" name="edad"/>18 a 30
 <input type="radio" id="31a50" value="31a50" name="edad"/>31 a 50
 <input type="radio" id="mas50" value="mas50" name="edad"/>Más de 50
 ```
+
+Resultado:
 
 <input type="radio" id="menos18" value="menos18" name="edad"/>Menos de 18
 <input type="radio" id="18a30" value="18a30" name="edad"/>18 a 30
@@ -181,7 +188,7 @@ Así, si queremos crear un grupo de radios para que nos elija una edad le podrem
 
 Al igual que sucedía con los campos de entrada de tipo check, podemos cargar campos de tipo radio en nuestro formulario con un elemento preseleccionado. Para ello volvemos a recurrir al atributo checked.
 
-```
+```text
 <input type="radio" id="identificador" value="valor" name="nombre" checked="checked"/>
 ```
 
@@ -191,7 +198,7 @@ Cuando diseñemos un formulario es posible que necesitemos enviar un fichero de 
 
 En este caso vamos a necesitar un campo de entrada de tipo `“file”`. La sintaxis de los campos de entrada para tipos file sería:
 
-```
+```text
 <input type="file" id="identificador" value="valor" name="nombre"/>
 ```
 
@@ -201,72 +208,104 @@ Otra de las opciones que nos podemos encontrar dentro de los formularios es con 
 
 La sintaxis para los campos de entrada ocultos es:
 
+```text
 <input type="hidden" id="identificador" value="valor" name="nombre"/>
+```
 
 En estos casos el campo valor siempre va relleno, ya que no hay otra forma de que el usuario le asigne un valor.
-Imágenes
 
-Uno de los tipos de elementos input es el tipo “image”. Mediante el tipo “image” podemos crear un botón de envío que sea una imágen. La imagen se cargará mediante el atributo src. La estructura para elementos input de este tipo es:
+## Imágenes
 
+Uno de los tipos de elementos input es el tipo `image`. Mediante el tipo “image” podemos crear un botón de envío que sea una imágen. La imagen se cargará mediante el atributo `src`. La estructura para elementos input de este tipo es:
+
+```text
 <input type="image" src="url-image" name="nombre" alt="texto-alternativo"/>
+```
 
 Como sucede cada vez que manipulamos imágenes hay que rellenar el atributo alt con un texto alternativo por motivos de accesibilidad.
 
-Cuando pulsemos sobre la imagen se enviará el formulario, además se enviarán dos atributos name.x y name.y con los datos de las coordenadas x,y en las que se pulsó sobre la imagen.
-Áreas de texto
+Cuando pulsemos sobre la imagen se enviará el formulario, además se enviarán dos atributos `name.x` y `name.y` con los datos de las `coordenadas x,y` en las que se pulsó sobre la imagen.
+
+## Áreas de texto
 
 Un elemento algo más avanzado que el campo de entrada de datos es el área de texto. Mediante un área de texto tenemos la capacidad de que el usuario inserte una gran cantidad de datos y además que esos datos puedan estar en diferentes líneas.
 
-Para poder insertar un área de texto en nuestro formulario utilizamos el elemento textarea. La sintaxis del elemento textarea será la siguiente:
+Para poder insertar un área de texto en nuestro formulario utilizamos el elemento `textarea`. La sintaxis del elemento textarea será la siguiente:
 
-<textarea rows="numerofilas" cols="numerocolumnas" name="nombre"></textarea>
+```text
+<textarea rows="numero_filas" cols="numero_columnas" name="nombre"></textarea>
+```
 
-A diferencia del elemento input, el textarea tiene una etiqueta de inicio y una de fin.
+A diferencia del elemento input, el `textarea` tiene una etiqueta de inicio y una de fin.
 
 Los atributos que nos encontramos en un textarea son:
 
-    rows, indica el número de filas que tiene el área de texto.
-    cols, indica el número de columnas que tiene el área de texto.
-    name, al igual que sucede con otros elementos del formulario, name contiene el nombre del campo, el cual será enviado al servidor para ser procesado.
+* `rows`, indica el número de filas que tiene el área de texto.
+* `cols`, indica el número de columnas que tiene el área de texto.
+* `name`, al igual que sucede con otros elementos del formulario, name contiene el nombre del campo, el cual será enviado al servidor para ser procesado.
 
 De esta forma, si queremos crear un área de texto de 20 filas por 100 columnas en el que un usuario pueda insertar un comentario tendríamos el siguiente código:
 
+```text
 <textarea rows="20" cols="100" name="comentario"></textarea>
+```
 
 Si queremos que el área de texto vaya con un valor por defecto, tendremos que añadir dicho contenido entre las etiquetas de textarea.
 
-<textarea rows="20" cols="100" name="comentario">Contenido de comentario...</textarea>
+```text
+<textarea rows="20" cols="100" name="comentario">
+  Contenido de comentario...
+</textarea>
+```
 
-Combos de opciones
+## Combos de opciones
 
 Otro elemento que podemos insertar dentro de un formulario es un combo de opciones. Es decir, un elemento en el que el usuario pueda elegir un elemento o varios de una lista.
 
-El elemento que nos permite insertar un combo de opciones es select. La sintaxis básica de un elemento select es:
+El elemento que nos permite insertar un combo de opciones es `select`. La sintaxis básica de un elemento select es:
 
-<select name="nombre" size="valoresvisibles" multiple="multiple">
+```text
+<select name="nombre" size="valores_visibles" multiple="multiple">
 </select>
+```
 
 De los valores que nos encontramos en el elemento select destacamos:
 
-    name, que al igual que en anteriores casos sirve para dar un nombre al campo que se enviará al servidor.
-    size, indica el número de opciones que aparecen visibles por defecto. En el caso de que haya más opciones que las elegidas por defecto lo que nos aparecerá será un scroll para poder localizar todas.
-    multiple, este atributo nos servirá para poder elegir varias de las opciones. Es decir, para tener una elección múltiple.
+* `name`, que al igual que en anteriores casos sirve para dar un nombre al campo que se enviará al servidor.
+* `size`, indica el número de opciones que aparecen visibles por defecto. En el caso de que haya más opciones que las elegidas por defecto lo que nos aparecerá será un scroll para poder localizar todas.
+* `multiple`, este atributo nos servirá para poder elegir varias de las opciones. Es decir, para tener una elección múltiple.
 
-Como hemos visto el elemento select sólo demarca el combo de las opciones. Para definir cada una de las opciones tenemos el elemento option.
+Como hemos visto el elemento `select` sólo demarca el combo de las opciones. Para definir cada una de las opciones tenemos el elemento `option`.
 
 La sintaxis básica del elemento option es la siguiente:
 
+```text
 <option label="etiqueta" value="valor"></option>
+```
 
-Dónde el atributo label indica el texto que aparecerá para poder ser seleccionado en el combo y value el valor realmente de ese item. En el caso de que no pongamos el atributo label o el atributo value, el valor que cogerán dichos atributos será el texto que encontremos entre los elementos de option.
+Dónde el atributo `label` indica el texto que aparecerá para poder ser seleccionado en el combo y `value` el valor realmente de ese item. En el caso de que no pongamos el atributo label o el atributo value, el valor que cogerán dichos atributos será el texto que encontremos entre los elementos de option.
 
 Por lo tanto, si juntamos la sintaxis del elemento select y el elemento option tenemos la siguiente codificación:
 
-<select name="nombre" size="valoresvisibles" multiple="multiple">
+```text
+<select name="nombre" size="valores_visibles" multiple="multiple">
   <option label="etiqueta" value="valor"></option>
 </select>
+```
 
 Si queremos crear un combo de opciones donde podamos elegir un equipo de fútbol tendríamos el siguiente código:
+
+```text
+<select>
+  <option>Atlético de Madrid</option>
+  <option>Real Betis</option>
+  <option>FC. Barcelona</option>
+  <option>Real Madrid</option>
+  <option>Zaragoza</option>
+</select>
+```
+
+Resultado:
 
 <select>
   <option>Atlético de Madrid</option>
@@ -276,7 +315,19 @@ Si queremos crear un combo de opciones donde podamos elegir un equipo de fútbol
   <option>Zaragoza</option>
 </select>
 
-Si queremos que una de las opciones del combo vaya marcada recurriremos al atributo selected. Así, en nuestro ejemplo si marcamos como predefinido el equipo del Betis tendríamos el siguiente código:
+Si queremos que una de las opciones del combo vaya marcada recurriremos al atributo `selected`. Así, en nuestro ejemplo si marcamos como predefinido el equipo del Betis tendríamos el siguiente código:
+
+```text
+<select>
+  <option>Atletico de Madrid</option>
+  <option selected="selected">Betis</option>
+  <option>FC. Barcelona</option>
+  <option>Real Madrid</option>
+  <option>Zaragoza</option>
+</select>
+```
+
+Resultado:
 
 <select>
   <option>Atletico de Madrid</option>
@@ -286,15 +337,39 @@ Si queremos que una de las opciones del combo vaya marcada recurriremos al atrib
   <option>Zaragoza</option>
 </select>
 
-Otra de las cosas que podemos realizar dentro de un combo es agrupar opciones. Si la lista de opciones es muy grande podemos utilizar el elemento optgroup.
+Otra de las cosas que podemos realizar dentro de un combo es agrupar opciones. Si la lista de opciones es muy grande podemos utilizar el elemento `optgroup`.
 
 La sintaxis del elemento optgroup es la siguiente:
 
+```Text
 <optgroup label="etiqueta"></optgroup>
+```
 
 Dentro del elemento optgroup encontraremos todos los elementos option que queramos agrupar.
 
 Si por ejemplo, queremos ofrecer un combo de ciudades y las queremos agrupar por continentes, tendríamos el siguiente código:
+
+```text
+<select name="ciudad">
+  <optgroup label="Europa">
+    <option>Madrid</option>
+    <option>Londres</option>
+    <option>Paris</option>
+  </optgroup>
+  <optgroup label="Suramerica">
+    <option>Santiago</option>
+    <option>Sao Paulo</option>
+    <option>Lima</option>
+    <option>Bogota</option>
+  </optgroup>
+    <optgroup label="Africa">
+    <option>Casablanca</option>
+    <option>Ciudad del Cabo</option>
+  </optgroup>
+</select>
+```
+
+Resultado:
 
 <select name="ciudad">
   <optgroup label="Europa">
@@ -314,7 +389,7 @@ Si por ejemplo, queremos ofrecer un combo de ciudades y las queremos agrupar por
   </optgroup>
 </select>
 
-Botones
+## Botones
 
 Una vez que hemos insertado campos de texto en nuestro formulario es hora de insertar botones. Mediante los botones podremos realizar operaciones de envío del formulario, de manipulación de datos, borrado,…
 
