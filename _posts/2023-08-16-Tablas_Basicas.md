@@ -13,7 +13,9 @@ tags:
   - Tablas Básicas
 ---
 
-![](/assets/images/)
+<center>
+    <img src='./../assets/images/Tablas/TablasBasicas.jpg'>
+</center>
 
 ## Poner título a la tabla
 
