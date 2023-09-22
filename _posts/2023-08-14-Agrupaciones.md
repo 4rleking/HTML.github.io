@@ -13,7 +13,9 @@ tags:
   - Agrupaciones
 ---
 
-![](/assets/images/)
+<center>
+    <img src='./../assets/images/Agrupaciones/Intro.jpg'>
+</center>
 
 Hasta ahora hemos visto cómo insertar diferentes elementos sobre un documento HTML. Estos elementos se irán mostrando según la secuencia en la que hayamos escrito el documento HTML.
 
@@ -31,9 +33,9 @@ Un elemento en bloque siempre empieza con una línea y su tamaño será igual al
 
 El elemento que nos permite realizar agrupaciones en bloque es el elemento `div` o más conocidos como capas. La estructura del elemento div es:
 
-```
+```text
 <div>
-<!-- Contenido de la Capa -->
+  <!-- Contenido de la Capa -->
 </div>
 ```
 
@@ -41,7 +43,7 @@ Los elementos en bloque pueden contener a otros elementos en bloque o bien a otr
 
 Por ejemplo podríamos agrupar en un bloque el siguiente contenido.
 
-```
+```text
 <div id="micapa">
   <h2>Título del Contenido</h2>
     Este es el contenido del artículo
@@ -54,15 +56,17 @@ Por ejemplo podríamos agrupar en un bloque el siguiente contenido.
 
 Para poder realizar agrupaciones en línea tenemos el elemento `span`. La estructura del elemento span será:
 
-```
-<span> <!-- Contenido --></span>
+```text
+<span>
+  <!-- Contenido -->
+</span>
 ```
 
 Las agrupaciones en línea sólo pueden contener a otros elementos en línea, no a elementos de tipo bloque.
 
 Por ejemplo podríamos tener la siguiente agrupación en línea.
 
-```
+```text
 <span id="entrada">
   <strong>Articulo Nuevo</strong>,
   <em>,12 de marzo de 2016</em>
