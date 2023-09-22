@@ -248,6 +248,7 @@ El elemento sobre el que nos podemos apoyar es el atributo `header`. El atributo
 
 Partamos de la siguiente tabla…
 
+```text
 <tr>
   <th headers="nombre">Víctor</th>
   <th headers="edad">38</th>
@@ -258,10 +259,11 @@ Partamos de la siguiente tabla…
   <th headers="edad">25</th>
   <th headers="localidad">Salamanca</th>
 </tr>
+```
 
 Para ello lo primero que hay que hacer es darle un atributo id a las celdas de cabecera.
 
-```
+```text
 <tr>
   <th id="nombre">Nombre</th>
   <th id="edad">Edad</th>
@@ -271,7 +273,7 @@ Para ello lo primero que hay que hacer es darle un atributo id a las celdas de c
 
 Ahora, para cada celda deberemos de asociar el identificador, atributo `id`, de la cabecera que les aplique en el atributo `headers`.
 
-```
+```text
 <tr>
   <th headers="nombre">Víctor</th>
   <th headers="edad">38</th>
@@ -286,7 +288,7 @@ Ahora, para cada celda deberemos de asociar el identificador, atributo `id`, de 
 
 Así, el agente de usuario no visual, cuando vaya leyendo la fila hará lo siguiente:
 
-```
+```text
 “Nombre, Víctor. Edad, 38. Localidad, Madrid.
 Nombre, Esther. Edad, 25. Localidad, Salamanca."
 ```
@@ -299,7 +301,7 @@ El atributo `axis` aplica a las celdas `td` y celdas de cabecera `th`. Y permite
 
 La estructura sería:
 
-```
+```text
 <td axis="categoria">...</td>
 ```
 
@@ -358,7 +360,7 @@ En esta tabla podemos establecer que haya 3 tipos de categorías. Los gastos (co
 
 Así que deberemos de marcar esas celdas con la categoría correspondiente, mediante el atributo axis. El código en HTML nos quedará de la siguiente forma:
 
-```
+```text
 <table>
   <tr>
     <th></th>
@@ -419,23 +421,27 @@ Aunque el formato de las tablas, tanto para la tabla en sí, como para sus filas
 
 En primer lugar podemos utilizar el atributo `width` del elemento table.
 
-```
-<table width="ancho">...</table>
+```text
+<table width="ancho">
+  ...
+</table>
 ```
 
 De esta forma podremos establecer en cualquier medida el ancho que queremos que ocupe la tabla. Ya sean `px`, `em`, tantos `por ciento`,…
 
 Por ejemplo podemos definir que ocupe todo el ancho de una página asignándole un valor de width del 100%.
 
-```
-<table width="100%">...</table>
+```text
+<table width="100%">
+  ...
+</table>
 ```
 
 Para el caso de las columnas ya hemos visto que tanto los elementos `colgroup` como `col` también tenían el atributo `width`. Así que serán con estos elemento con los que de forma básica podamos establecer el ancho de una columna.
 
 De esta forma si tenemos 4 columnas y queremos que se distribuyan de forma igual, podríamos escribir el siguiente código.
 
-```
+```text
 <table>
   <colgroup span="4" width="25%">
   ....
