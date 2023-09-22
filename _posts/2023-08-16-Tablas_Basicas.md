@@ -36,6 +36,24 @@ Así, el código para poner el título a la tabla sería:
     <td>Fila 1 Columna 3</td>
     <td>Fila 1 Columna 4</td>
   </tr>
+  <tr>
+    <td>Fila 2 Columna 1</td>
+    <td>Fila 2 Columna 2</td>
+    <td>Fila 2 Columna 3</td>
+    <td>Fila 2 Columna 4</td>
+  </tr>
+  <tr>
+    <td>Fila 3 Columna 1</td>
+    <td>Fila 3 Columna 2</td>
+    <td>Fila 3 Columna 3</td>
+    <td>Fila 3 Columna 4</td>
+  </tr>
+  <tr>
+    <td>Fila 4 Columna 1</td>
+    <td>Fila 4 Columna 2</td>
+    <td>Fila 4 Columna 3</td>
+    <td>Fila 4 Columna 4</td>
+  </tr>
 </table>
 ```
 
@@ -48,6 +66,24 @@ Resultado:
     <td>Fila 1 Columna 2</td>
     <td>Fila 1 Columna 3</td>
     <td>Fila 1 Columna 4</td>
+  </tr>
+  <tr>
+    <td>Fila 2 Columna 1</td>
+    <td>Fila 2 Columna 2</td>
+    <td>Fila 2 Columna 3</td>
+    <td>Fila 2 Columna 4</td>
+  </tr>
+  <tr>
+    <td>Fila 3 Columna 1</td>
+    <td>Fila 3 Columna 2</td>
+    <td>Fila 3 Columna 3</td>
+    <td>Fila 3 Columna 4</td>
+  </tr>
+  <tr>
+    <td>Fila 4 Columna 1</td>
+    <td>Fila 4 Columna 2</td>
+    <td>Fila 4 Columna 3</td>
+    <td>Fila 4 Columna 4</td>
   </tr>
 </table>
 
