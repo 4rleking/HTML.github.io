@@ -97,7 +97,7 @@ Es por ello que es muy recomendable que siempre añadamos un resumen a nuestra t
 
 El código es tan sencillo como este:
 
-```
+```text
 <table summary="Tabla que contiene datos de ejemplo para poder explicar como construir tablas con el lenguaje HTML">
 <caption>Mi tabla de ejemplo</caption>
   <tr>
@@ -115,7 +115,7 @@ Una cosa que vemos es que las tablas suelen tener una primera fila de encabezado
 
 Así, la cabecera de una tabla quedará de la siguiente forma:
 
-```
+```text
 <table>
   <tr>
     <th>Cabecera 1</th>
@@ -127,8 +127,53 @@ Así, la cabecera de una tabla quedará de la siguiente forma:
     <td>Fila 1 Columna 2</td>
     <td>Fila 1 Columna 3</td>
   </tr>
+  <tr>
+    <td>Fila 2 Columna 1</td>
+    <td>Fila 2 Columna 2</td>
+    <td>Fila 2 Columna 3</td>
+  </tr>
+  <tr>
+    <td>Fila 3 Columna 1</td>
+    <td>Fila 3 Columna 2</td>
+    <td>Fila 3 Columna 3</td>
+  </tr>
+  <tr>
+    <td>Fila 4 Columna 1</td>
+    <td>Fila 4 Columna 2</td>
+    <td>Fila 4 Columna 3</td>
+  </tr>
 </table>
 ```
+
+Resultado:
+
+<table>
+  <tr>
+    <th>Cabecera 1</th>
+    <th>Cabecera 2</th>
+    <th>Cabecera 3</th>
+  </tr>
+  <tr>
+    <td>Fila 1 Columna 1</td>
+    <td>Fila 1 Columna 2</td>
+    <td>Fila 1 Columna 3</td>
+  </tr>
+  <tr>
+    <td>Fila 2 Columna 1</td>
+    <td>Fila 2 Columna 2</td>
+    <td>Fila 2 Columna 3</td>
+  </tr>
+  <tr>
+    <td>Fila 3 Columna 1</td>
+    <td>Fila 3 Columna 2</td>
+    <td>Fila 3 Columna 3</td>
+  </tr>
+  <tr>
+    <td>Fila 4 Columna 1</td>
+    <td>Fila 4 Columna 2</td>
+    <td>Fila 4 Columna 3</td>
+  </tr>
+</table>
 
 ## El atributo scope
 
