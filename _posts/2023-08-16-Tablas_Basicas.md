@@ -1,7 +1,7 @@
 ---
 layout: single
 title: Tablas Básicas HTML
-excerpt: ""
+excerpt: "Ya que iniciamos con la elaboración de tablas, iremos mejorando un poco en su estructura y su diseño."
 date: 2023-08-16
 classes: wide
 header:
