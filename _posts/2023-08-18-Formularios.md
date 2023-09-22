@@ -13,7 +13,9 @@ tags:
   - Formularios
 ---
 
-![](/assets/images/)
+<center>
+    <img src='./../assets/images/Formularios/Intro.png'>
+</center>
 
 ## ¿Qué son los formularios en HTML?
 
