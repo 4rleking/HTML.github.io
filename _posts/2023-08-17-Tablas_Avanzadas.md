@@ -29,7 +29,7 @@ Para ello podemos agrupar las filas en tres partes:
 
 Cada uno de estos elementos tendrá *una* o *n* filas, dependiendo de las que queramos agrupar. La estructura es la misma para los tres casos:
 
-```
+```text
 <thead>
   <tr> <!-- fila(s) --></tr>
 </thead>
@@ -47,32 +47,32 @@ Es importante saber que no es necesario que aparezcan en ese orden dentro de la 
 
 De esta forma podríamos tener la siguiente tabla con agrupaciones:
 
-```
+```text
 <table>
   <thead>
     <tr>
-	<td scope="row">Mes</td>
-      <td>Enero</td>
-      <td>Febrero</td>
+	    <td scope="row">Mes</td>
+        <td>Enero</td>
+        <td>Febrero</td>
     </tr>
   </thead>
   <tfoot>
     <tr>
-	<td>Total</td>
-      <td>15</td>
-      <td>25</td>
+	    <td>Total</td>
+        <td>15</td>
+        <td>25</td>
     </tr>
   </tfoot>
   <tbody>
     <tr>
-	<td>Agua</td>
-      <td>10</td>
-      <td>15</td>
+	    <td>Agua</td>
+        <td>10</td>
+        <td>15</td>
     </tr>
     <tr>
-	<td>Gas</td>
-      <td>5</td>
-      <td>10</td>
+	    <td>Gas</td>
+        <td>5</td>
+        <td>10</td>
     </tr>
   </tbody>
 </table>
@@ -115,6 +115,7 @@ Ya hemos visto que las tablas se definen por filas. Pero una de las cosas que no
 
 Por ejemplo en la siguiente tabla vemos que hay una relación semántica de las columnas relativa a los meses.
 
+```text
 <table>
   <colgroup span="2" width="100"></colgroup>
   <colgroup span="2" width="100"></colgroup>
@@ -141,12 +142,13 @@ Por ejemplo en la siguiente tabla vemos que hay una relación semántica de las 
     <td>920€</td>
   </tr>
 </table>
+```
 
 Para poder definir estas relaciones semánticas entre las columnas HTML nos ofrece el elemento `colgroup`.
 
 El elemento colgroup se define al principio de la tabla y tiene la siguiente estructura.
 
-```
+```text
 <colgroup span="numero-columnas" width="ancho"></colgroup>
 ```
 
@@ -156,7 +158,7 @@ Además contamos con el atributo `width` el cual nos permite especificar un anch
 
 En la tabla que hemos visto el código HTML quedaría de la siguiente forma:
 
-```
+```text
 <table>
   <colgroup span="2" width="100"></colgroup>
   <colgroup span="2" width="100"></colgroup>
@@ -191,7 +193,7 @@ El elemento col aparecerá dentro del elemento `colgroup` tantas veces como colu
 
 La estructura del elemento col es:
 
-```
+```text
 <col span="numero-columnas" width="ancho-columna" />
 ```
 
@@ -199,7 +201,7 @@ Es decir que también permite agrupar columnas mediante su atributo `width` y da
 
 El anterior ejemplo utilizando el elemento col quedaría de la siguiente forma:
 
-```
+```text
 <table>
   <colgroup>
     <col width="100">
