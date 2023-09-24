@@ -241,22 +241,35 @@ enviar.php
 
 ### Formato del contenido del formulario
 
-Cuando enviamos el formulario deberemos de saber qué sucede con el contenido. Es decir, si lo envía de alguna forma en especial o con algún tipo de tratamiento. Lo primero que tenemos que saber es que el campo que permite establecer el formato del contenido del formulario es enctype, que es un atributo del elemento form:
+Cuando enviamos el formulario deberemos de saber qué sucede con el contenido. Es decir, si lo envía de alguna forma en especial o con algún tipo de tratamiento. Lo primero que tenemos que saber es que el campo que permite establecer el formato del contenido del formulario es `enctype`, que es un atributo del elemento `form`:
 
-<form enctype="formato-contenido">...</form>
+```text
+<form enctype="formato-contenido">
+  ...
+</form>
+```
 
-Los formularios, por defecto, se envían mediante el formato application/x-www-form-urlencoded. Este formato lo que hace es sustituir los espacios por + y convierte los caracteres especiales en secuencias de escape. Por otro lado las combinaciones de nombre valor las separa por un = y las parejas con símbolos &. Como ya vimos en las peticiones del tipo GET.
+Los formularios, por defecto, se envían mediante el formato `application/x-www-form-urlencoded`. Este formato lo que hace es sustituir los espacios por `+` y convierte los caracteres especiales en `secuencias de escape`. Por otro lado las combinaciones de nombre valor las separa por un `=` y las parejas con símbolos `&`. Como ya vimos en las peticiones del tipo `GET`.
 
-<form enctype="application/x-www-form-urlencoded">...</form>
+```text
+<form enctype="application/x-www-form-urlencoded">
+  ...
+</form>
+```
 
-Si bien, en el caso de que queramos enviar formularios con un gran volumen de información o con imágenes, deberemos de utilizar el tipo multipart/form-data.
+Si bien, en el caso de que queramos enviar formularios con un gran volumen de información o con imágenes, deberemos de utilizar el tipo `multipart/form-data`.
 
-<form enctype="multipart/form-data">...</form>
+```text
+<form enctype="multipart/form-data">
+  ...
+</form>
+```
 
-Los formularios que utilizan el tipo multipart/form-data contienen una serie de partes conocidas como form-data en las que va cada uno de los campos enviados en el formulario.
+Los formularios que utilizan el tipo `multipart/form-data` contienen una serie de partes conocidas como form-data en las que va cada uno de los campos enviados en el formulario.
 
 De esta forma si tenemos el siguiente formulario:
 
+```text
 <form enctype="multipart/form-data" action="envio.php" method="POST">
   <label for="nombre">Nombre</label>
   <input type="text" id="nombre" name="nombre"/>
@@ -266,9 +279,11 @@ De esta forma si tenemos el siguiente formulario:
   <input type="file" id=fichero" name="fichero"/>
   <button id="envio">Enviar Formulario</button>
 </form>
+```
 
 La petición multipart podría ser de la siguiente forma:
 
+```text
 -----------------------------931237358445456570660578548
 Content-Disposition: form-data; name="nombre"
 
@@ -280,4 +295,4 @@ Cuervo
 -----------------------------931237358445456570660578548
 Content-Disposition: form-data; name="fichero"; filename="fotografia.png"
 Content-Type: image/png
-
+```
