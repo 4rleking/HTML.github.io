@@ -46,15 +46,28 @@ Equipo: <input type="checkbox" id="betis" name="equipo" value="Real Betis"/>
 
 ## Estructura del formulario
 
-En HTML contamos con dos elementos para dar una estructura a los formularios. Estos elementos: fieldset y legend nos ayudan a agrupar los datos relacionados dentro del formulario.
+En HTML contamos con dos elementos para dar una estructura a los formularios. Estos elementos: `fieldset` y `legend` nos ayudan a agrupar los datos relacionados dentro del formulario.
 
-Pero vayamos por parte. El primero es fieldset, este es un elemento que agrupa a diferentes elementos del formulario, elementos que están relacionados entre ellos.
+Pero vayamos por parte. El primero es `fieldset`, este es un elemento que agrupa a diferentes elementos del formulario, elementos que están relacionados entre ellos.
 
 La sintaxis de fieldset es la siguiente:
 
-<fieldset>...</fieldset>
+```text
+<fieldset>
+  ...
+</fieldset>
+```
 
 Entre estos elementos aparecerán los campos del formulario. Por ejemplo si tenemos campos personales básicos podemos agruparlos de la siguiente forma:
+
+```text
+<fieldset>
+ <label for="nombre">Nombre</label><input type="text" id="nombre"/>
+ <label for="apellido">Apellido</label><input type="text" id="apellido"/>
+</fieldset>
+```
+
+Resultado:
 
 <fieldset>
  <label for="nombre">Nombre</label><input type="text" id="nombre"/>
@@ -63,95 +76,153 @@ Entre estos elementos aparecerán los campos del formulario. Por ejemplo si tene
 
 El elemento legend nos servirá para darle un significado a una agrupación
 
+```text
+<fieldset>
+ <legend>Introduzca sus datos personales</legend>
+ <label for="nombre">Nombre</label><input type="text" id="nombre"/>
+ <label for="apellido">Apellido</label><input type="text" id="apellido"/>
+</fieldset>
+```
+
+Resultado:
+
 <fieldset>
  <legend>Introduzca sus datos personales</legend>
  <label for="nombre">Nombre</label><input type="text" id="nombre"/>
  <label for="apellido">Apellido</label><input type="text" id="apellido"/>
 </fieldset>
 
-Hacer foco en el formulario
+## Hacer foco en el formulario
 
-Cuando construyamos un formulario deberemos de preocuparnos por cómo hacer foco en los elementos. Está claro que si utilizamos un navegador web el uso del ratón nos facilitará el ir rellenando cada uno de los campos del formulario.
+Cuando construyamos un formulario deberemos de preocuparnos por cómo hacer `foco en los elementos`. Está claro que si utilizamos un navegador web el uso del ratón nos facilitará el ir rellenando cada uno de los campos del formulario.
 
-Pero piensa en alguien que no tenga un ratón o bien que utilice un agente de usuario no visual adaptado para discapacitados. En este caso y para temas de accesibilidad tenemos dos formas de hacer foco en el formulario. Una será el uso de la tabulación, y el otro el uso de teclas de acceso.
-Tabulaciones por el formulario
+Pero piensa en alguien que no tenga un ratón o bien que utilice un agente de usuario no visual adaptado para discapacitados. En este caso y para temas de accesibilidad tenemos dos formas de hacer foco en el formulario. Una será el uso de la `tabulación`, y el otro el uso de `teclas de acceso`.
 
-Para las navegaciones por tabulación en el formulario existe el atributo tabindex. Este atributo que lo podemos encontrar en todos los elementos de un formulario nos sirve para establecer un orden mediante números ordinales de los campos del formulario. La estructura del atributo tabindex es:
+### Tabulaciones por el formulario
 
+Para las navegaciones por tabulación en el formulario existe el atributo `tabindex`. Este atributo que lo podemos encontrar en todos los elementos de un formulario nos sirve para establecer un orden mediante números ordinales de los campos del formulario. La estructura del atributo tabindex es:
+
+```text
 tabindex="numero"
+```
 
 De esta forma podríamos establecer el orden de un formulario de dos datos básicos y un botón mediante el siguiente código:
+
+```text
+<label for="nombre">Nombre</label><input tabindex="1" type="text" id="nombre"/>
+<label for="apellido">Apellido</label><input tabindex="2" type="text" id="apellido"/>
+<button id="envio" tabindex="3">Enviar Formulario</button>
+```
+
+Resultado:
 
 <label for="nombre">Nombre</label><input tabindex="1" type="text" id="nombre"/>
 <label for="apellido">Apellido</label><input tabindex="2" type="text" id="apellido"/>
 <button id="envio" tabindex="3">Enviar Formulario</button>
 
-Teclas de acceso
+### Teclas de acceso
 
-Otra forma de poder acceder a un elemento del formulario es asignando al elemento una tecla de acceso. De esta manera cuando pulsamos esta tecla (en combinación con alguna definida en el sistema, como la tecla ALT para Windows) iremos directamente a dicho elemento.
+Otra forma de poder acceder a un elemento del formulario es asignando al elemento una `tecla de acceso`. De esta manera cuando pulsamos esta tecla (en combinación con alguna definida en el sistema, como la tecla `ALT` para Windows) iremos directamente a dicho elemento.
 
-El atributo que nos permite hacer esto es el atributo accesskey. La estructura del atributo accesskey es la siguiente:
+El atributo que nos permite hacer esto es el atributo `accesskey`. La estructura del atributo accesskey es la siguiente:
 
+```text
 accesskey=tecla
+```
 
 Así podríamos definir un campo de un formulario al cual fuésemos al pulsar sobre la “tecla N”:
+
+```text
+<label for="nombre" accesskey="N">Nombre</label>
+<input tabindex="1" type="text" id="nombre"/>
+```
+
+Resultado:
 
 <label for="nombre" accesskey="N">Nombre</label>
 <input tabindex="1" type="text" id="nombre"/>
 
-Deshabilitar controles
+## Deshabilitar controles
 
-A la hora de crear un formulario puede darse el caso que haya algunos campos que en determinados momentos nos aparezcan deshabilitados. Es decir, que el usuario no pueda modificar el valor de dichos campos.
+A la hora de crear un formulario puede darse el caso que haya algunos campos que en determinados momentos nos `aparezcan deshabilitados`. Es decir, que el usuario no pueda modificar el valor de dichos campos.
 
-Para poder deshabilitar los controles de un formulario contamos con el atributo disabled. La estructura del atributo disabled es directamente:
+Para poder deshabilitar los controles de un formulario contamos con el atributo `disabled`. La estructura del atributo disabled es directamente:
 
+```text
 disabled
+```
 
 De esta manera si queremos deshabilitar nuestro anterior campo de texto que nos permitía insertar un nombre escribimos lo siguiente:
+
+```text
+<label for="nombre" accesskey="N">Nombre</label>
+<input disabled type="text" id="nombre"/>
+```
+
+Resultado:
 
 <label for="nombre" accesskey="N">Nombre</label>
 <input disabled type="text" id="nombre"/>
 
 No podremos hacer foco sobre los elementos de un formulario que estén deshabilitados. De igual manera al hacer tabulación tampoco se podrá tabular sobre ellos. Además no se enviarán como parte de la petición del formulario.
 
-En el caso de que queramos buscar el mismo efecto de que el elemento esté deshabilitado, pero que se pueda tabular, hacer foco y enviar, tenemos el atributo de solo lectura o readonly.
+En el caso de que queramos buscar el mismo efecto de que el elemento esté deshabilitado, pero que se pueda tabular, hacer foco y enviar, tenemos el atributo de `solo lectura` o `readonly`.
 
 La estructura del atributo readonly es básica:
 
+```text
 readonly
+```
 
 Si lo aplicamos nuevamente a nuestro campo de texto tendremos:
+
+```text
+<label for="nombre" accesskey="N">Nombre</label>
+<input readonly type="text" id="nombre"/>
+```
+
+Resultado:
 
 <label for="nombre" accesskey="N">Nombre</label>
 <input readonly type="text" id="nombre"/>
 
-El atributo readonly solo se puede aplicar a elementos input y textarea.
-Envío del formulario
+El atributo `readonly` solo se puede aplicar a elementos `input` y `textarea`.
+
+## Envío del formulario
 
 Una vez que ya hemos construido nuestro formulario solo nos quedará una cosa, esta será enviar el formulario.
 
-Para enviar el formulario deberemos de controlar dos cosas. Por un lado a dónde lo vamos a enviar, es decir, cual es la URL del programa destino (o página destino) que va a procesar los datos del formulario y que nos va a dar una respuesta. Por otro lado está el tipo de envío de los parámetros. En el caso del tipo de envío tenemos la posibilidad de hacerlo mediante un formato GET (con los datos visibles) o POST (con los datos no visibles).
+Para enviar el formulario deberemos de controlar dos cosas. Por un lado `a dónde lo vamos a enviar`, es decir, cual es la URL del programa destino (o página destino) que va a procesar los datos del formulario y que nos va a dar una respuesta. Por otro lado está el `tipo de envío de los parámetros`. En el caso del tipo de envío tenemos la posibilidad de hacerlo mediante un formato `GET` (con los datos visibles) o `POST` (con los datos no visibles).
 
-Ambos elementos los configuraremos dentro del elemento form.
-Destino del formulario
+Ambos elementos los configuraremos dentro del elemento `form`.
 
-Para establecer el destino del formulario tenemos el atributo action. El atributo action tiene la URL de destino del formulario. La estructura del atributo action es:
+### Destino del formulario
 
+Para establecer el destino del formulario tenemos el atributo `action`. El atributo action tiene la URL de destino del formulario. La estructura del atributo action es:
+
+```text
 <form action="url-destino"> … </form>
+```
 
 Las URL de destino suelen ser programas o código de servidor, ya sea Java, PHP, Node, ASP,… Los cuales recuperan la información del formulario, la manipulan y nos devuelven una nueva página HTML.
-Tipo de envío: GET y POST
 
-Para establecer el tipo de envío del formulario tenemos el atributo method. El atributo method puede tener dos valores: GET y POST. El atributo method lo encontramos dentro del elemento form:
+### Tipo de envío: GET y POST
 
+Para establecer el tipo de envío del formulario tenemos el atributo `method`. El atributo method puede tener dos valores: `GET` y `POST`. El atributo method lo encontramos dentro del elemento form:
+
+```text
 <form method="GET|POST"> … </form>
+```
 
-A la hora de enviar los ** formularios de forma GET** lo que vamos a conseguir es que a la URL destino del formulario se le añaden los parámetros con los datos del formulario en la estructura:
+A la hora de enviar los formularios de forma `GET` lo que vamos a conseguir es que a la URL destino del formulario se le añaden los parámetros con los datos del formulario en la estructura:
 
+```text
 action?nombre1=valor1&nombre2=valor2&...&nombreN=valorN
+```
 
 Si tenemos el siguiente formulario:
 
+```text
 <form action="envio.php" method="GET">
   <label for="nombre">Nombre</label>
   <input type="text" id="nombre" name="nombre"/>
@@ -159,15 +230,23 @@ Si tenemos el siguiente formulario:
   <input type="text" id="apellido" name="apellido"/>
   <button id="envio">Enviar Formulario</button>
 </form>
+```
 
 Lo que se enviará en la URL será algo parecido a:
 
+```text
 envio.php?name=Victor&apellido=Cuervo
+```
 
 Es importante que nos fijemos que utiliza el valor que hay dentro de los atributos name para realizar el envío. Si indicamos que el método de envío del formulario es POST lo que hará el navegador es enviar los datos junto al cuerpo del formulario y no se verán en la URL.
 
 Así, en el siguiente formulario:
 
+<center>
+    <img src='./../assets/images/Formularios/enviophp.png'>
+</center>
+
+```text
 <form action="envio.php" method="POST">
   <label for="nombre">Nombre</label>
   <input type="text" id="nombre" name="nombre"/>
@@ -175,11 +254,15 @@ Así, en el siguiente formulario:
   <input type="text" id="apellido" name="apellido"/>
   <button id="envio">Enviar Formulario</button>
 </form>
+```
 
 Solo veremos, al enviarlo:
 
+```text
 enviar.php
-Formato del contenido del formulario
+```
+
+### Formato del contenido del formulario
 
 Cuando enviamos el formulario deberemos de saber qué sucede con el contenido. Es decir, si lo envía de alguna forma en especial o con algún tipo de tratamiento. Lo primero que tenemos que saber es que el campo que permite establecer el formato del contenido del formulario es enctype, que es un atributo del elemento form:
 
