@@ -176,10 +176,7 @@ readonly
 
 Si lo aplicamos nuevamente a nuestro campo de texto tendremos:
 
-```text
-<label for="nombre" accesskey="N">Nombre</label>
-<input readonly type="text" id="nombre"/>
-```
+<img src='./../assets/images/Formularios/accesskey.png' alt="" width="70%" height="70%" />
 
 Resultado:
 
@@ -222,15 +219,7 @@ action?nombre1=valor1&nombre2=valor2&...&nombreN=valorN
 
 Si tenemos el siguiente formulario:
 
-```text
-<form action="envio.php" method="GET">
-  <label for="nombre">Nombre</label>
-  <input type="text" id="nombre" name="nombre"/>
-  <label for="apellido">Apellido</label>
-  <input type="text" id="apellido" name="apellido"/>
-  <button id="envio">Enviar Formulario</button>
-</form>
-```
+<img src='./../assets/images/Formularios/method_GET.png' alt="" width="70%" height="70%" />
 
 Lo que se enviará en la URL será algo parecido a:
 
@@ -243,16 +232,6 @@ Es importante que nos fijemos que utiliza el valor que hay dentro de los atribut
 Así, en el siguiente formulario:
 
 <img src='./../assets/images/Formularios/enviophp.png' alt="" width="70%" height="70%" />
-
-```text
-<form action="envio.php" method="POST">
-  <label for="nombre">Nombre</label>
-  <input type="text" id="nombre" name="nombre"/>
-  <label for="apellido">Apellido</label>
-  <input type="text" id="apellido" name="apellido"/>
-  <button id="envio">Enviar Formulario</button>
-</form>
-```
 
 Solo veremos, al enviarlo:
 
