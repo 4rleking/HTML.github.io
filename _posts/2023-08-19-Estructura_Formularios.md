@@ -243,7 +243,7 @@ Es importante que nos fijemos que utiliza el valor que hay dentro de los atribut
 Así, en el siguiente formulario:
 
 <center>
-    <img src='./../assets/images/Formularios/enviophp.png'>
+    <img src='./../assets/images/Formularios/enviophp.png' alt="" width="50%" height="50%" />
 </center>
 
 ```text
